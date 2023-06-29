@@ -54,19 +54,35 @@ Outputs:
 The program will output menus for the user to interact with, as well as other statements depending on the selected option. During the horse race, the program will output the current state of the race for the user to see.
 ```
 
-# TODO:
-* Instroduce OOP Programming
-  * Create a program (Horse Race)
-  * Utilize Objects (Horse)
-  * Have the students fill out the functionality of the Objects to make the program work
-* Introduce Software Project Management Tools
-  * UML (Unified Markup Language)
-  * Class diagrams
-  * UI mapping
-  * Flow charts
-  * State Machines
-  * Project Guiding Document (README.md in this case)
-    * Goal
-    * Inputs
-    * Outputs
-    * Methods/Classes
+### UI Diagram
+Now that we have a plan for our project, we can make a **UI Diagram** to help us visualize what our project should look like. Attached to this github repository should be a powerpoint presentation titled `FRC-ProgrammingPractice-HorseRaceVisualization.pptx`. This is an example of how to visualize Horse Race program.
+
+#### Key Takaways:
+* Notice that I try to create a visualization of every possible screen the user may see. This will help us take the idea we have in our heads and get us to something concrete. Saying *I'm going to write a Horse Race Program to allow a user to bet on horses.* doesn't always carry with it a clear picture as to how things will end up being implemented.
+* This process will also help you to find issues you may have in your program before you start coding. It can also help you to figure out what variables you may need access to at different stages of your program. I need the `bankAccount` balance in the main menu, but I also need it at the end of the race. Knowing this ahead of time can save me the trouble of trying to move variables around to be available in the areas I need it to.
+* One final point is that while UI visualization can help you to find problems before you go to write the code, it will only help you with the sort of problems that you can see. The code ends up having a lot more complexity when it comes to actually running the race, which can be hard to see here. There are hints to that complexity - look at how the horses move across the track. How would you do that? - but it doesn't really give you a good idea as to just how difficult that will be.
+
+### Class Diagrams
+The final software project management tool that we will use is the **Class Diagram**. This is a must-use tool for projects where you know it's a good idea to break the problem down into objects. Below is an example of one (made with [Draw.io](https://app.diagrams.net/). There are many others out there, so use what you like):
+
+![An image of the class diagram BEFORE writing the code for the program.](./Class-Diagram-BEFORE-CODING.PNG)
+
+Here's some quick notes on what's going on in this picture:
+* The boxes labeled `Horse` and `Main Menu` are classes. Both boxes represent a their respective classes and all functions and variables that will be needed for them to function.
+* The `+` and `-` signs represent public and private variables/functions.
+* There is a solid black line running horizontally through both boxes. These lines divide the *variables* (above) from the *functions* (below).
+* Each variable is first designated with a *type* followed by a *name* (ex. `int` and `position` for the **Horse** class).
+* Each function is designated with a *name*, any *inputs* in parentheses (and their types) followed by a *return value*.
+* We can also describe the relationships between different classes by using arrows and lines. In the diagram above, the part of the `Main Menu` class is *composed* of an array of the `Horse` class. This means that our `Main Menu` class will be utilizing our `Horse` class in order to do some of its tasks.
+
+The picture above is the class diagram I made for this project *before* I wrote the code. There's a reason I make this distinction. There's a very high likelihood that you will need to modify your class diagram as you program as you come across issues that you didn't see before hand. This will happen less and less as you go on, but it is impossible to know all of the issues you will face until you get to them. Making the class diagram, however, will give you an upper hand as writing it requires you to walk through the process you plan on having to make your program, exposing you to the flaws you may have in your logic.
+
+For practice, take the finished code in this repository and create a new Class Diagram for it. It will have some similarities to the image above, but it will have more detail as the program's complexity was revealed while coding and more functions were needed to abstract away concepts.
+
+## Assignment 3
+For this assignment, do the following:
+
+1. Write a new **Class Diagram** for the finished code. What differences can you find between the one that was written *before* the code was finished and the one you made for the finsihed code? Why do you think those differences are there? *Hint: I relied heavily on the UI Diagram to write the code.*
+2. If we didn't finish in the lecture, re-write your own version of the `Horse` class. Look at how the class is used in the `HorseRace` class to understand how you need to write the code. If it doesn't work, compare it to the example class I have in the repository to figure out what is wrong.
+3. Take your time and read through the code (you should have done this in order to complete the previous two tasks). What do you think are good decisions? What do you think are bad ones? Should there have been more classes, or less? This example is by no means perfect, and there are many ways to solve the same problem. Try to think about how you would write the code.
+4. **Bonus:** Re-write the Horse Race program from scratch! 
