@@ -5,8 +5,8 @@ The goal of this project is to learn a little bit about Object-Oriented-Programm
 
 We will also look at how to use project management tools in order to help facilitate the design of our code/program.
 
-## Project Management Tools
-There are many tools that you may use to do project management. Some, but not all, include:
+## Project Management & Software Development Tools
+There are many tools that you may use to do project management and Software Development. Some, but not all, include:
 * **Guiding Document:** this is the document you write in order to declare the programing goals and any other details you might want to specify. If you ever get lost, you can come back to this document and double-check if your code matches the end goal you wanted.
 * **Class Diagrams:** used to design classes for object-oriented code.
 * **Flow Charts:** can help to visualize how your program transitions between its many states.
