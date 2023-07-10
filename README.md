@@ -11,6 +11,7 @@ There are many tools that you may use to do project management. Some, but not al
 * **Class Diagrams:** used to design classes for object-oriented code.
 * **Flow Charts:** can help to visualize how your program transitions between its many states.
 * **UI Diagramming/Mapping:** used to draw out the UI for a given program to help understand how the user may interact with the system and give an insight into how one might design some of the functionality of the code.
+* **Pseudo Code:** Pseudo Code is used to map out the ideas or flow of your program without actually worrying about syntax. Here, your focus is to walk through the logic of your program before actually writing it. This can help you detect issues before you spend too much time flushing out details only to find out the method your first thought doesn't work.
 
 For this project, we will use the **Guiding Document**, **UI Diagramming**, and **Class Diagrams**.
 
