@@ -38,15 +38,16 @@ Below is an example of a Guiding Document, designed around the current project:
 Project Title: Horse Race Project
 
 Goal:
-The goal of this project is to write a terminal/command line program that allows a user to bet on a horse race. This program should:
+The goal of this project is to write a terminal/command line program that allows a user to bet on a horse race. This program should have a command line menu where the user can select from the following options:
 
 1) Allow the user to quit the program.
 2) Allow the user to see their available ballance.
 3) Allow the user to start a race, pick a horse to bet on, watch the race, and then have their balance updated to reflect the results of their race and the bet.
 
 Requirements:
-- If the user inputs wrong values when navigating the menu, the program should be able to handle this.
+- If the user inputs wrong values when navigating the menu, the program should be able to handle this (pick how you would like the program to handle this).
 - If the user does not have enough money to continue to bet, then they should be denied the ability to start a race.
+- The user should be able to watch the race live.
 
 Inputs:
 The user will use the terminal to input decisions for the program. The user's inputs will be restricted to explicit options listed in menus printed to the screen.
